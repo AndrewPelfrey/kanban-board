@@ -1,4 +1,4 @@
-# Project Name
+# Kanban
 
 ## Description
 A full-stack web application that includes user authentication, ticket management, and a RESTful API using Express.js, Sequelize, and React.
