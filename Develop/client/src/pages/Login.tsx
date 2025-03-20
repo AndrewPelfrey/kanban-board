@@ -21,7 +21,12 @@ const Login = () => {
     e.preventDefault();
     try {
       const data = await login(loginData);
-      Auth.login(data.token);
+      console.log("Login response in handleSubmit:", data);
+      if (data && data.token) {
+        Auth.login(data.token);
+      } else {
+        console.error("No token received, login failed.");
+      }
     } catch (err) {
       console.error('Failed to login', err);
     }
