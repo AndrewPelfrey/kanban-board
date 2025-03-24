@@ -2,7 +2,7 @@ import { User } from '../models/user.js';
 
 export const seedUsers = async () => {
   try {
-    const count = await User.count(); // Check if users exist
+    const count = await User.count(); 
     if (count === 0) {
       await User.bulkCreate(
         [
